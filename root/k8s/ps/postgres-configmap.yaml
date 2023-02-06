@@ -11,5 +11,11 @@ data:
   POSTGRES_USER: testuser
   POSTGRES_PASSWORD: testpassword
   PGDATA: /var/lib/postgresql/data/pgdata
+  REDMINE_DB_POSTGRES: database
+  REDMINE_DB_USERNAME: testuser
+  REDMINE_DB_PASSWORD: testpassword
+  REDMINE_DB_DATABASE: testdatabase
+  REDMINE_SECRET_KEY_BASE: supersecretkey
+
 
 

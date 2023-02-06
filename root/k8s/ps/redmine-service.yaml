@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service # Create service
+metadata:
+  name: redmine # Sets the service name
+  labels:
+    app: redmine # Defines app to create service for
+spec:
+  type: LoadBalancer # Sets the service type
+  ports:
+    - name: http
+      port: 3000 # Sets the port to run the redmine application
+      protocol: TCP
+  selector:
+    app: redmine
+  clusterIP: 10.106.89.12
+  externalIPs:
+    - 172.17.0.5
+
